@@ -16,7 +16,7 @@ describe('Register deliverer', () => {
   it('should be able to register a new deliverer', async () => {
     const result = await sut.execute({
       name: 'John Doe',
-      cpf: '000.000.000-00',
+      cpf: '00000000000',
       password: '123456',
     })
 
@@ -29,7 +29,7 @@ describe('Register deliverer', () => {
   it('should hash deliverer password upon registration', async () => {
     const result = await sut.execute({
       name: 'John Doe',
-      cpf: '000.000.000-00',
+      cpf: '00000000000',
       password: '123456',
     })
 
