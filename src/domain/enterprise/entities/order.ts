@@ -3,7 +3,7 @@ import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { Optional } from '@/core/types/optional'
 import { OrderAttachment } from './order-attachment'
 
-type OrderStatus = 'Posted' | 'PickedUp' | 'Delivered' | 'Returned'
+export type OrderStatus = 'Posted' | 'PickedUp' | 'Delivered' | 'Returned'
 
 export interface OrderProps {
   recipientId: UniqueEntityID
