@@ -3,12 +3,17 @@ import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 
 export interface RecipientProps {
   name: string
+  cpf: string
   address: string
 }
 
 export class Recipient extends Entity<RecipientProps> {
   get name() {
     return this.props.name
+  }
+
+  get cpf() {
+    return this.props.cpf
   }
 
   get address() {
