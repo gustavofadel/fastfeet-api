@@ -12,12 +12,20 @@ export class Recipient extends Entity<RecipientProps> {
     return this.props.name
   }
 
+  set name(name: string) {
+    this.props.name = name
+  }
+
   get cpf() {
     return this.props.cpf
   }
 
   get address() {
     return this.props.address
+  }
+
+  set address(address: string) {
+    this.props.address = address
   }
 
   static create(props: RecipientProps, id?: UniqueEntityID) {

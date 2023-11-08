@@ -17,4 +17,10 @@ export class InMemoryRecipientsRepository implements RecipientsRepository {
 
     return recipient
   }
+
+  async save(recipient: Recipient): Promise<void> {
+    const itemIndex = this.items.findIndex((item) => item.cpf === recipient.cpf)
+
+    this.items[itemIndex] = recipient
+  }
 }
